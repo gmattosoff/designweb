@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Biblioteca Digital UniFECAF: livros, materiais acadêmicos e conteúdos de apoio à aprendizagem em um só lugar.">
+    <title>Biblioteca Digital UniFECAF</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
+    <header class="header">
+        <div class="container header__inner">
+            <a class="logo" href="#inicio" aria-label="Biblioteca Digital UniFECAF - início">
+                <span class="logo__marca" aria-hidden="true">U</span>
+                <span class="logo__texto">Biblioteca <strong>UniFECAF</strong></span>
+            </a>
+
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-botao" aria-label="Abrir ou fechar o menu">
+                <span></span><span></span><span></span>
+            </label>
+
+            <nav class="menu" aria-label="Navegação principal">
+                <ul class="menu__lista">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#categorias">Categorias</a></li>
+                    <li><a href="#destaques">Destaques</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo">
+
+        <section class="hero" id="inicio" aria-labelledby="hero-titulo">
+            <div class="container hero__inner">
+                <div class="hero__texto">
+                    <p class="etiqueta">Biblioteca Digital</p>
+                    <h1 id="hero-titulo">Todo o conhecimento que você precisa, a um clique de distância</h1>
+                    <p class="hero__descricao">Acesse livros, materiais acadêmicos e conteúdos de apoio à aprendizagem da UniFECAF, onde e quando quiser.</p>
+
+                    <form class="busca" role="search" action="#destaques" method="get">
+                        <label for="busca-campo" class="sr-only">Buscar livros, autores ou assuntos</label>
+                        <input type="search" id="busca-campo" name="q" placeholder="Busque por título, autor ou assunto">
+                        <button type="submit" class="botao">Buscar</button>
+                    </form>
+                </div>
+                <div class="hero__imagem">
+                    <img src="assets/imagens/hero-estante.svg" alt="Ilustração de estantes coloridas repletas de livros" width="600" height="440">
+                </div>
+            </div>
+        </section>
+
+        <section class="secao" id="categorias" aria-labelledby="categorias-titulo">
+            <div class="container">
+                <header class="secao__cabecalho">
+                    <h2 id="categorias-titulo">Explore por categoria</h2>
+                    <p>Encontre rapidamente o material da sua área de estudo.</p>
+                </header>
+
+                <ul class="categorias">
+                    <li><a class="categoria" href="#destaques"><span class="categoria__icone" aria-hidden="true">💻</span><span class="categoria__nome">Tecnologia</span><span class="categoria__qtd">120 títulos</span></a></li>
+                    <li><a class="categoria" href="#destaques"><span class="categoria__icone" aria-hidden="true">📊</span><span class="categoria__nome">Gestão</span><span class="categoria__qtd">95 títulos</span></a></li>
+                    <li><a class="categoria" href="#destaques"><span class="categoria__icone" aria-hidden="true">⚖️</span><span class="categoria__nome">Direito</span><span class="categoria__qtd">78 títulos</span></a></li>
+                    <li><a class="categoria" href="#destaques"><span class="categoria__icone" aria-hidden="true">🩺</span><span class="categoria__nome">Saúde</span><span class="categoria__qtd">110 títulos</span></a></li>
+                    <li><a class="categoria" href="#destaques"><span class="categoria__icone" aria-hidden="true">📣</span><span class="categoria__nome">Marketing</span><span class="categoria__qtd">64 títulos</span></a></li>
+                    <li><a class="categoria" href="#destaques"><span class="categoria__icone" aria-hidden="true">🎓</span><span class="categoria__nome">Educação</span><span class="categoria__qtd">86 títulos</span></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="secao secao--alt" id="destaques" aria-labelledby="destaques-titulo">
+            <div class="container">
+                <header class="secao__cabecalho">
+                    <h2 id="destaques-titulo">Livros em destaque</h2>
+                    <p>Os títulos mais acessados pelos estudantes neste semestre.</p>
+                </header>
+
+                <div class="livros">
+                    <article class="livro">
+                        <img src="assets/imagens/capa-algoritmos.svg" alt="Capa do livro Algoritmos e Lógica de Programação" width="300" height="420">
+                        <div class="livro__info">
+                            <span class="livro__categoria">Tecnologia</span>
+                            <h3>Algoritmos e Lógica de Programação</h3>
+                            <p>Fundamentos para quem está começando a programar.</p>
+                            <a class="botao botao--contorno" href="#contato">Ver detalhes<span class="sr-only"> de Algoritmos e Lógica de Programação</span></a>
+                        </div>
+                    </article>
+                    <article class="livro">
+                        <img src="assets/imagens/capa-redes.svg" alt="Capa do livro Redes de Computadores" width="300" height="420">
+                        <div class="livro__info">
+                            <span class="livro__categoria">Tecnologia</span>
+                            <h3>Redes de Computadores</h3>
+                            <p>Protocolos, topologias e segurança em redes.</p>
+                            <a class="botao botao--contorno" href="#contato">Ver detalhes<span class="sr-only"> de Redes de Computadores</span></a>
+                        </div>
+                    </article>
+                    <article class="livro">
+                        <img src="assets/imagens/capa-gestao.svg" alt="Capa do livro Gestão de Projetos" width="300" height="420">
+                        <div class="livro__info">
+                            <span class="livro__categoria">Gestão</span>
+                            <h3>Gestão de Projetos</h3>
+                            <p>Planejamento, execução e controle na prática.</p>
+                            <a class="botao botao--contorno" href="#contato">Ver detalhes<span class="sr-only"> de Gestão de Projetos</span></a>
+                        </div>
+                    </article>
+                    <article class="livro">
+                        <img src="assets/imagens/capa-direito.svg" alt="Capa do livro Direito Digital e Ética" width="300" height="420">
+                        <div class="livro__info">
+                            <span class="livro__categoria">Direito</span>
+                            <h3>Direito Digital e Ética</h3>
+                            <p>Privacidade, LGPD e responsabilidade online.</p>
+                            <a class="botao botao--contorno" href="#contato">Ver detalhes<span class="sr-only"> de Direito Digital e Ética</span></a>
+                        </div>
+                    </article>
+                    <article class="livro">
+                        <img src="assets/imagens/capa-saude.svg" alt="Capa do livro Anatomia Humana" width="300" height="420">
+                        <div class="livro__info">
+                            <span class="livro__categoria">Saúde</span>
+                            <h3>Anatomia Humana</h3>
+                            <p>Sistemas do corpo humano com ilustrações claras.</p>
+                            <a class="botao botao--contorno" href="#contato">Ver detalhes<span class="sr-only"> de Anatomia Humana</span></a>
+                        </div>
+                    </article>
+                    <article class="livro">
+                        <img src="assets/imagens/capa-marketing.svg" alt="Capa do livro Marketing Digital" width="300" height="420">
+                        <div class="livro__info">
+                            <span class="livro__categoria">Marketing</span>
+                            <h3>Marketing Digital</h3>
+                            <p>Estratégias de conteúdo, mídia e análise de dados.</p>
+                            <a class="botao botao--contorno" href="#contato">Ver detalhes<span class="sr-only"> de Marketing Digital</span></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="secao" id="servicos" aria-labelledby="servicos-titulo">
+            <div class="container">
+                <header class="secao__cabecalho">
+                    <h2 id="servicos-titulo">Serviços da biblioteca</h2>
+                    <p>Apoio para que você aproveite ao máximo o acervo.</p>
+                </header>
+                <div class="servicos">
+                    <article class="servico">
+                        <span class="servico__icone" aria-hidden="true">📖</span>
+                        <h3>Acervo digital</h3>
+                        <p>Leia livros e artigos online, com acesso 24 horas por dia.</p>
+                    </article>
+                    <article class="servico">
+                        <span class="servico__icone" aria-hidden="true">🔎</span>
+                        <h3>Pesquisa orientada</h3>
+                        <p>Bibliotecários ajudam a localizar fontes confiáveis para seus trabalhos.</p>
+                    </article>
+                    <article class="servico">
+                        <span class="servico__icone" aria-hidden="true">📝</span>
+                        <h3>Normas ABNT</h3>
+                        <p>Guias e modelos para formatar citações, referências e TCCs.</p>
+                    </article>
+                    <article class="servico">
+                        <span class="servico__icone" aria-hidden="true">🤝</span>
+                        <h3>Empréstimo e reserva</h3>
+                        <p>Reserve exemplares físicos e acompanhe prazos de devolução.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape" id="contato">
+        <div class="container rodape__inner">
+            <div class="rodape__bloco">
+                <h2 class="rodape__titulo">Biblioteca Digital UniFECAF</h2>
+                <p>Conhecimento acessível para toda a comunidade acadêmica.</p>
+            </div>
+            <div class="rodape__bloco">
+                <h2 class="rodape__titulo">Atendimento</h2>
+                <p>Segunda a sexta, das 8h às 22h<br>Sábado, das 8h às 14h</p>
+                <p><a href="mailto:biblioteca@exemplo.edu.br">biblioteca@exemplo.edu.br</a></p>
+            </div>
+            <div class="rodape__bloco">
+                <h2 class="rodape__titulo">Links rápidos</h2>
+                <ul class="rodape__links">
+                    <li><a href="#categorias">Categorias</a></li>
+                    <li><a href="#destaques">Destaques</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="rodape__copy">© 2026 Biblioteca Digital UniFECAF. Projeto acadêmico de Design Web.</p>
+    </footer>
+</body>
+</html>

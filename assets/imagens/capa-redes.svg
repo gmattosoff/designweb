@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 420" role="img" aria-label="Capa do livro Redes de Computadores">
+  <rect width="300" height="420" fill="#12408a"/>
+  <rect x="0" y="0" width="22" height="420" fill="#ffb84d"/>
+  <circle cx="220" cy="90" r="46" fill="#ffb84d" opacity="0.9"/>
+  <rect x="44" y="170" width="200" height="6" fill="#ffb84d"/>
+  <text x="44" y="230" font-family="Georgia, serif" font-size="23" font-weight="700" fill="#ffffff">Redes de</text>
+  <text x="44" y="266" font-family="Georgia, serif" font-size="23" font-weight="700" fill="#ffffff">Computadores</text>
+  <text x="44" y="380" font-family="Arial, sans-serif" font-size="14" fill="#ffffff" opacity="0.85">Biblioteca UniFECAF</text>
+</svg>
